@@ -2,13 +2,103 @@
 @import 'bootstrap/bootstrap';
 
 // Base Styles
-@import 'slices/base.less';
+// @import 'slices/base.less';
 
-
-a {
-    color: red;
+*{
+	padding: 0;
+	margin: 0;
 }
 
-h1{
-	color : blue;
+@color3 : #fcac45;
+@color4: #292929;
+@color5 :#111111;
+@font-face{
+	font-family: "OpenSans Bold" ;
+	src:url("OpenSans-Bold.ttf") format("truetype");
+}
+
+/* Welcome here */
+body{
+	// font-family: "OpenSans" ,Sans-serif;
+}
+
+.wellcome{
+	height: 790px;
+	padding: 45px 0px 60px 0;
+	background-color: #111111;
+
+	.navibar{
+		
+		ul{
+			li{	
+				position: relative;
+				overflow: hidden;
+				a{
+					text-transform: uppercase;
+					// padding: 15px 12px;
+				}
+				&:before{
+					content: '';
+					border: 2px solid @color4;
+					position: absolute;
+					bottom: 0px ; right: 50%;left: 0px;
+					z-index: 1;
+					opacity: 0;
+					transform: translateX(-100px);
+					transition: all 1s;
+				}
+				&:after{
+					content: '';
+					border: 2px solid @color3;
+					position: absolute;
+					bottom: 0px ; right: 0px;left: 50%;
+					z-index: 1;
+					opacity: 0;
+					transform: translateX(100px);
+					transition: all 1s;
+				}
+				&:hover{
+					&:before, &:after{
+						opacity: 1;
+						transform: translateX(0);
+						transition: all 0.6s;
+					}
+				}
+			}
+			li.active{
+				position: relative;
+
+				&:before{
+					content: '';
+					border: 2px solid @color4;
+					position: absolute;
+					bottom: 0px ; right: 50%;left: 0px;
+					z-index: 1;
+					opacity: 1;
+					transform: translateX(0);
+					transition: all 1s;
+				}
+				&:after{
+					content: '';
+					border: 2px solid @color3;
+					position: absolute;
+					bottom: 0px ; right: 0px;left: 50%;
+					z-index: 1;
+					opacity: 1;
+					transform: translateX(0);
+					transition: all 1s;
+				}
+			}
+		}
+	}
+}
+
+.header-content{
+	span{
+		font-size: 44px;
+		text-transform: uppercase;
+		span{
+			//color: red;
+		}
+	}
 }
