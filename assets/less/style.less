@@ -15,26 +15,30 @@
 /* add font here */
 @font-face{
 	font-family: "OpenSans Bold" ;
-	src:url("OpenSans-Bold.ttf") format("truetype");
+	src:url("fonts/OpenSans-Bold.ttf") format("truetype");
 }
 @font-face{
 	font-family: "OpenSans ConldBold" ;
-	src:url("OpenSans-CondBold.ttf") format("truetype");
+	src:url("fonts/OpenSans-CondBold.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: "OpenSans CondLight" ;
-	src:url("OpenSans-CondLight.ttf") format("truetype");
+	src:url("fonts/OpenSans-CondLight.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: "OpenSans Italic" ;
-	src:url("OpenSans-Italic.ttf") format("truetype");
+	src:url("fonts/OpenSans-Italic.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: "OpenSans Regular" ;
-	src:url("OpenSans-Regular.ttf") format("truetype");
+	src:url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: "OpenSans Light" ;
+	src:url("fonts/OpenSans-Light.ttf") format("truetype");
 }
 
 
@@ -46,11 +50,10 @@ body{
 /* Welcome here */
 .wellcome{
 	height: 790px;
-	padding: 45px 0px 60px 0;
 	background-color: #111111;
 
-	.navibar{
-		
+	.navbar{
+		padding: 60px 0;
 		ul{
 			li{	
 				position: relative;
@@ -116,11 +119,19 @@ body{
 }
 /* Header-content here */
 .header-content{
+	
+	margin-top: 290px;
 	span{
+		font-family: "OpenSans Light" ;
 		font-size: 44px;
 		text-transform: uppercase;
+		color : #999999;
 		span{
-			//color: red;
+			font-family: "OpenSans Bold" ;
+			color: @color3;
 		}
+	}
+	p{
+		color: #fff;
 	}
 }

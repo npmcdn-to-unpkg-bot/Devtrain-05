@@ -4125,7 +4125,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-fixed-top {
-  top: 60px;
+  top: 0px;
   border-width: 0 0 1px;
 }
 .navbar-fixed-bottom {
@@ -6536,38 +6536,44 @@ button.close {
 /* add font here */
 @font-face {
   font-family: "OpenSans Bold";
-  src: url("OpenSans-Bold.ttf") format("truetype");
+  src: url("fonts/OpenSans-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "OpenSans ConldBold";
-  src: url("OpenSans-CondBold.ttf") format("truetype");
+  src: url("fonts/OpenSans-CondBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "OpenSans CondLight";
-  src: url("OpenSans-CondLight.ttf") format("truetype");
+  src: url("fonts/OpenSans-CondLight.ttf") format("truetype");
 }
 @font-face {
   font-family: "OpenSans Italic";
-  src: url("OpenSans-Italic.ttf") format("truetype");
+  src: url("fonts/OpenSans-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "OpenSans Regular";
-  src: url("OpenSans-Regular.ttf") format("truetype");
+  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans Light";
+  src: url("fonts/OpenSans-Light.ttf") format("truetype");
 }
 /* Welcome here */
 .wellcome {
   height: 790px;
-  padding: 45px 0px 60px 0;
   background-color: #111111;
 }
-.wellcome .navibar ul li {
+.wellcome .navbar {
+  padding: 60px 0;
+}
+.wellcome .navbar ul li {
   position: relative;
   overflow: hidden;
 }
-.wellcome .navibar ul li a {
+.wellcome .navbar ul li a {
   text-transform: uppercase;
 }
-.wellcome .navibar ul li:before {
+.wellcome .navbar ul li:before {
   content: '';
   border: 2px solid #292929;
   position: absolute;
@@ -6584,7 +6590,7 @@ button.close {
   -moz-transition: all 1s;
   transition: all 1s;
 }
-.wellcome .navibar ul li:after {
+.wellcome .navbar ul li:after {
   content: '';
   border: 2px solid #fcac45;
   position: absolute;
@@ -6601,8 +6607,8 @@ button.close {
   -moz-transition: all 1s;
   transition: all 1s;
 }
-.wellcome .navibar ul li:hover:before,
-.wellcome .navibar ul li:hover:after {
+.wellcome .navbar ul li:hover:before,
+.wellcome .navbar ul li:hover:after {
   opacity: 1;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -6612,10 +6618,10 @@ button.close {
   -moz-transition: all 0.6s;
   transition: all 0.6s;
 }
-.wellcome .navibar ul li.active {
+.wellcome .navbar ul li.active {
   position: relative;
 }
-.wellcome .navibar ul li.active:before {
+.wellcome .navbar ul li.active:before {
   content: '';
   border: 2px solid #292929;
   position: absolute;
@@ -6632,7 +6638,7 @@ button.close {
   -moz-transition: all 1s;
   transition: all 1s;
 }
-.wellcome .navibar ul li.active:after {
+.wellcome .navbar ul li.active:after {
   content: '';
   border: 2px solid #fcac45;
   position: absolute;
@@ -6650,7 +6656,19 @@ button.close {
   transition: all 1s;
 }
 /* Header-content here */
+.header-content {
+  margin-top: 290px;
+}
 .header-content span {
+  font-family: "OpenSans Light";
   font-size: 44px;
   text-transform: uppercase;
+  color: #999999;
+}
+.header-content span span {
+  font-family: "OpenSans Bold";
+  color: #fcac45;
+}
+.header-content p {
+  color: #fff;
 }
