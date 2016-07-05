@@ -6533,9 +6533,26 @@ button.close {
   padding: 0;
   margin: 0;
 }
+/* add font here */
 @font-face {
   font-family: "OpenSans Bold";
   src: url("OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans ConldBold";
+  src: url("OpenSans-CondBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans CondLight";
+  src: url("OpenSans-CondLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans Italic";
+  src: url("OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url("OpenSans-Regular.ttf") format("truetype");
 }
 /* Welcome here */
 .wellcome {
@@ -6632,6 +6649,7 @@ button.close {
   -moz-transition: all 1s;
   transition: all 1s;
 }
+/* Header-content here */
 .header-content span {
   font-size: 44px;
   text-transform: uppercase;
