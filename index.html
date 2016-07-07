@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="build/css/font-awesome.css">
     <link rel="stylesheet" href="build/owl.carousel.css">
     <link rel="stylesheet" href="build/owl.theme.css">
+    <link rel="stylesheet" href="build/animate.min.css">
 </head>
 <body>
    <div class="container-fluid">
       <!--  Step 1-well come -->
       <div id="Home" class="row wellcome">
             <div class="container">
+                
+                 
                 <div class="row">
 
                     <!--  My - navbar -->
@@ -30,13 +33,7 @@
                             </div>
 
                             <div class="collapse navbar-collapse" id="myNavbar">
-                              <!--  My Responsive - navbar -->
-                              <div class="z-index1 reponsive">
-                                <div class="reponsive-nav wow slideInUp">
-                                  <a href="#" class="open-nav"><i class="fa fa-bars f60" aria-hidden="true"></i></a>
-                                </div>
-                              </div>
-                              <!--  My Responsive - navbar -->
+                     
                               <ul class="nav navbar-nav navbar-right">
                                 <li class="active"><a href="#Home">Home</a></li>
                                 <li><a href="#about">about</a></li>
@@ -44,11 +41,11 @@
                                 <li><a href="#portfolio">portfolio</a></li>
                                 <li><a href="#testimonials">testimonials</a></li>
                                 <li><a href="#contact">contact</a></li>
-                              
                               </ul>
                             </div> 
-
+                              
                           </div>
+                          
                         </nav>
                     </div>
                     <!--  ENd my- Navbar -->
@@ -62,6 +59,7 @@
                     </div>
 
                 </div>
+               
             </div>
       </div>   
       <!-- End Step 1-well come -->
@@ -70,11 +68,11 @@
       <div id="about" class="row about-us">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12 about-us-left">
+              <div class="col-md-6 col-sm-4 col-xs-12 about-us-left">
                   <img src="assets/images/mac.png" alt="">
               </div>  
-              <div class="col-md-1 col-sm-1 col-xs-12"></div>
-              <div class="col-md-5 col-sm-5 col-xs-12">
+              <div class="col-md-1 col-sm-1 col-xs-12 none"></div>
+              <div class="col-md-5 col-sm-8 col-xs-12">
                   <div class="about-us-right">
                     <h4 class="text-up">About Us</h4>
                     <div class="title">
@@ -92,8 +90,8 @@
                     <button class="my-btn"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;browser our work</button>
                   </div>
               </div>
-                        </div>
-            </div>
+          </div>
+        </div>
          
       </div>
       <!-- End Step 2 - About Us -->
@@ -314,10 +312,10 @@
               </div>
 
 
-              <div class="col-md-12 col-sm-12 col-xs-12  wow slideInUp col-sm-12 col-xs-12 portfolio-list mb40 mt60 fillter-by">
+              <div class="col-md-12 col-sm-12 col-xs-12 wow slideInUp portfolio-list mb40 mt60 fillter-by">
                 <div class="row">
-                  <div class="col-md-6 text-left"><span>FILTER BY TYPE</span></div>
-                   <div class="col-md-6 text-right">
+                  <div class="col-md-6 col-sm-4 col-xs-12 text-left"><span>FILTER BY TYPE</span></div>
+                   <div class="col-md-6 col-sm-8 col-xs-12 text-right">
                       <ul>
                        <li class="active" data-filter="*"><a href="#">All</a></li>
                        <li data-filter=".website"><a href="#">website |</a></li>
@@ -328,7 +326,7 @@
                 </div>
               </div>
 
-              <div class="col-md-12 col-sm-12 col-xs-12 wow slideInUp col-sm-12 col-xs-12 grid">
+              <div class="col-md-12 col-sm-12 col-xs-12 wow slideInUp grid">
 
                 <div class="grid-item-2  wow slideInUp father website">
                   <img src="assets/images/img1.png" alt="">
@@ -506,8 +504,8 @@
 
               <div class="col-md-12 col-sm-12 col-xs-12 mt60 our-clients-slider">
                   <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
+                    <div class="col-md-1 col-sm-12 col-xs-12"></div>
+                    <div class="col-md-10 col-sm-12 col-xs-12">
                       <div id="owl-demo-3">
                                 
                             <div class="item our-client-title">
@@ -544,7 +542,7 @@
                            
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-1 col-sm-12 col-xs-12"></div>
                   </div>
               </div>
             </div>
@@ -613,9 +611,9 @@
        <!-- End Step 9 footer --> 
 
    </div>
-
-
-
+   
+    
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src = "assets/js/bootstrap.js"></script>
@@ -624,5 +622,11 @@
     <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="build/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+    <!--  END WOW JS- ANIMATE -->
+
 </body>
 </html>

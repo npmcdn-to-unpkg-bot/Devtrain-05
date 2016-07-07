@@ -87,28 +87,29 @@ $(document).ready(function(){
 
       //- END ISOTOPE---------------------------------------------------------------------
 	  //  REnponsive-menu________----------------------------------------------------------
-	    var animationNameIn = 'animated bounceInLeft';
-	      var animationNameOut = 'animated hinge';
-	      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	     //  var animationNameIn = 'animated bounceInLeft';
+	     //  var animationNameOut = 'animated hinge';
+	     //  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-	     $('.open-nav').click(function(){
+	     // $('.open-nav').click(function(){
 	      
-	          $(".reponsive-nav-list").css({"z-index":"100","width":"100%","display":"block","font-size":"40px",
-	            "text-align":"center"});
-	          $(".reponsive-nav-list").addClass(animationNameIn).one(animationEnd,function(){
-	            $(this).removeClass(animationNameIn);
-	         });
-	      });
-	      $('.close-nav').click(function(){
-	         $(".reponsive-nav-list").addClass(animationNameOut).one(animationEnd,function(){
-	           $(this).css("display","none");
-	           $(this).removeClass(animationNameOut);
-	        });
-	     });
+	     //      $(".reponsive-nav-list").css({"z-index":"10000","width":"100%","display":"block","font-size":"40px",
+	     //        "text-align":"center"});
+	     //      $(".reponsive-nav-list").addClass(animationNameIn).one(animationEnd,function(){
+	     //        $(this).removeClass(animationNameIn);
+	     //     });
+	     //  });
+	     //  $('.close-nav').click(function(){
+	     //     $(".reponsive-nav-list").addClass(animationNameOut).one(animationEnd,function(){
+	     //       $(this).css("display","none");
+	     //       $(this).removeClass(animationNameOut);
+	     //    });
+	     // });
 	   // End REnponsive-menu________----------------------------------------------------------
       //- Ofset ID for Animate---------------------------------------------------------------------
       	
-      	 $("#myNavbar a").click(function (){
+      	 $("ul.nav a, .reponsive-nav-list a").click(function (){
+      	 	// $('.reponsive-nav-list').css('display','none');
       	 	var y = $(this).attr('href');
       	 	var i = $(''+y+'').offset().top;
       	 	

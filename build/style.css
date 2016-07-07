@@ -6557,6 +6557,9 @@ button.close {
 .absolute {
   position: absolute !important;
 }
+.none {
+  display: none;
+}
 /* add font here */
 @font-face {
   font-family: "OpenSans Bold";
@@ -7116,17 +7119,157 @@ button.close {
   .col-xs-9 {
     text-align: center ;
   }
-  .reponsive {
-    font-size: 60px;
-    position: fixed;
-  }
   .wellcome {
     height: auto;
   }
+  .about-us {
+    height: auto;
+  }
+  .about-us .about-us-left {
+    text-align: center;
+  }
   .about-us .about-us-left img {
     position: static;
+    width: 100%;
   }
   .about-us .about-us-right {
+    position: static;
+    text-align: center;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact .input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contact input {
+    width: 100% !important;
+  }
+  .services {
+    height: auto;
+  }
+  .services .services-content {
+    position: static;
+  }
+  .clients #owl-demo-2 {
+    position: static;
+  }
+  .our-work {
+    height: auto;
+  }
+  .our-work .grid {
+    margin: 0 !important;
+    margin-left: -15px;
+  }
+  .our-work .grid-item-2 {
+    width: 200px;
+  }
+  .our-work .grid-item-2 .inner-2 {
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .our-work .grid-item-2:hover .inner-2 {
+    top: 0;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .our-clients {
+    height: auto;
+  }
+  .our-clients #owl-demo-3 {
+    position: static;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wellcome {
+    height: auto;
+  }
+  .about-us {
+    height: auto;
+  }
+  .about-us .about-us-left {
+    text-align: center;
+  }
+  .about-us .about-us-left img {
+    position: static;
+    width: 100%;
+  }
+  .about-us .about-us-right {
+    position: static;
+    text-align: center;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact .input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contact input {
+    width: 100% !important;
+  }
+  .services {
+    height: auto;
+  }
+  .services .services-content {
+    position: static;
+  }
+  .clients #owl-demo-2 {
+    position: static;
+  }
+  .our-work {
+    height: auto;
+  }
+  .our-work .portfolio-list ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    float: none;
+  }
+  .our-work .grid {
+    margin: 0 !important;
+    margin-left: -15px;
+  }
+  .our-work .grid-item-2 {
+    margin: 20px 0 !important;
+    right: 15px;
+    width: auto;
+  }
+  .our-clients {
+    height: auto;
+  }
+  .our-clients #owl-demo-3 {
     position: static;
   }
 }

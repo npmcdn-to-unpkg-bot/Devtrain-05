@@ -41,6 +41,9 @@
 .absolute{
 	position: absolute !important;
 }
+.none{
+	display: none;
+}
 /* add font here */
 @font-face{
 	font-family: "OpenSans Bold" ;
@@ -505,6 +508,7 @@ body{
 	display: none;
 }
 
+
 @media screen and (max-width: 1024px) {
 
 	.row{
@@ -520,25 +524,143 @@ body{
 	.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
 		text-align: center ;
 	}
-	.reponsive{
-		// display: block;
-		font-size: 60px;
-		position: fixed;
-
-	}
 	.wellcome{
 		height: auto;
-		// .nav{
-		// 	display: none;
-		// }
+		.nav{
+			
+		}
 	}
 	.about-us{
+		height: auto;
 		.about-us-left{
-			img{position: static;}
+			text-align: center;
+			img{
+				position: static;
+				width: 100%;
+			}
 		}
 		.about-us-right{
 			position: static;
+			text-align: center;
 		}
 	}
+	.contact{
+		height: auto;
+		.input{
+			flex-direction: column;
+		}
+		input{width: 100% !important;}
+	}
+	.services{
+		height: auto;
+		.services-content{
+			position: static;
+		}
+	}
+	.clients{
+		#owl-demo-2{
+			position: static;
+		}
+	}
+	.our-work{
+		height: auto;
+		.portfolio-list ul{
+			// display: flex;
+   // 			 flex-direction: row;
+   // 			 float: none;
+		}
+		.grid{
+			margin : 0 !important;
+			margin-left: -15px;
+		}
+		.grid-item-2{
+			// margin: 20px 0 !important;
+			// right: 15px;
+			width: 200px;
+			.inner-2{
+
+				top:0;left: 0;right: 0;opacity: 0;
+				transform: translateX(100px);
+				transition: all 0.5s;
+			}
+			&:hover{
+				.inner-2{
+					top:0;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+	.our-clients{
+		height: auto;
+		#owl-demo-3{
+			position: static;
+		}
+	}
+
 	
+}
+
+@media screen and (max-width: 320px) {
+	.wellcome{
+		height: auto;
+		.nav{
+			
+		}
+	}
+	.about-us{
+		height: auto;
+		.about-us-left{
+			text-align: center;
+			img{
+				position: static;
+				width: 100%;
+			}
+		}
+		.about-us-right{
+			position: static;
+			text-align: center;
+		}
+	}
+	.contact{
+		height: auto;
+		.input{
+			flex-direction: column;
+		}
+		input{width: 100% !important;}
+	}
+	.services{
+		height: auto;
+		.services-content{
+			position: static;
+		}
+	}
+	.clients{
+		#owl-demo-2{
+			position: static;
+		}
+	}
+	.our-work{
+		height: auto;
+		.portfolio-list ul{
+			display: flex;
+   			 flex-direction: column;
+   			 float: none;
+		}
+		.grid{
+			margin : 0 !important;
+			margin-left: -15px;
+		}
+		.grid-item-2{
+			margin: 20px 0 !important;
+			right: 15px;
+			width: auto;
+		}
+	}
+	.our-clients{
+		height: auto;
+		#owl-demo-3{
+			position: static;
+		}
+	}
 }
