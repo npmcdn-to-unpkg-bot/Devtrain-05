@@ -7082,8 +7082,14 @@ button.close {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+  #owl-demo {
+    position: static;
+  }
   .about-us {
     height: auto;
+  }
+  .about-us ul li {
+    text-align: left;
   }
   .about-us .about-us-left {
     text-align: center;
@@ -7206,6 +7212,9 @@ button.close {
   .about-us {
     height: auto;
   }
+  .about-us ul li {
+    text-align: left;
+  }
   .about-us .about-us-left {
     text-align: center;
   }
@@ -7236,6 +7245,9 @@ button.close {
     height: auto;
   }
   .services .services-content {
+    position: static;
+  }
+  #owl-demo {
     position: static;
   }
   .clients #owl-demo-2 {
