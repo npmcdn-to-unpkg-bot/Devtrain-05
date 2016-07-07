@@ -459,7 +459,7 @@ body{
 	}
 	.mesager{
 		text-align: left;
-		input{
+		textarea{
 			width: 100%;
 			height: 160px;
 			border: 1px solid @color6;
@@ -504,108 +504,16 @@ body{
 		color: @color6;
 	}
 }
-.reponsive{
-	display: none;
-}
 
 
-@media screen and (max-width: 1024px) {
 
-	.row{
-		text-align: center;
-	}
-	
-	.col-md-1, .col-md-10, .col-md-11, .col-md-12, 
-	.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
-	.col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, 
-	.col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, 
-	.col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, 
-	.col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, 
-	.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-		text-align: center ;
-	}
+
+@media screen and (min-width: 320px) and (max-width : 767px) {
 	.wellcome{
-		height: auto;
-		.nav{
-			
-		}
-	}
-	.about-us{
-		height: auto;
-		.about-us-left{
-			text-align: center;
-			img{
-				position: static;
-				width: 100%;
-			}
-		}
-		.about-us-right{
-			position: static;
-			text-align: center;
-		}
-	}
-	.contact{
-		height: auto;
-		.input{
-			flex-direction: column;
-		}
-		input{width: 100% !important;}
-	}
-	.services{
-		height: auto;
-		.services-content{
-			position: static;
-		}
-	}
-	.clients{
-		#owl-demo-2{
-			position: static;
-		}
-	}
-	.our-work{
-		height: auto;
-		.portfolio-list ul{
-			// display: flex;
-   // 			 flex-direction: row;
-   // 			 float: none;
-		}
-		.grid{
-			margin : 0 !important;
-			margin-left: -15px;
-		}
-		.grid-item-2{
-			// margin: 20px 0 !important;
-			// right: 15px;
-			width: 200px;
-			.inner-2{
-
-				top:0;left: 0;right: 0;opacity: 0;
-				transform: translateX(100px);
-				transition: all 0.5s;
-			}
-			&:hover{
-				.inner-2{
-					top:0;
-					transform: translateX(0);
-				}
-			}
-		}
-	}
-	.our-clients{
-		height: auto;
-		#owl-demo-3{
-			position: static;
-		}
-	}
-
-	
-}
-
-@media screen and (max-width: 320px) {
-	.wellcome{
-		height: auto;
-		.nav{
-			
+		height: 500px;
+		.header-content{
+			    margin-top: 100px;
+   			    margin-bottom: 100px;
 		}
 	}
 	.about-us{
@@ -663,4 +571,99 @@ body{
 			position: static;
 		}
 	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+	.row{
+		text-align: center;
+	}
+	
+	.col-md-1, .col-md-10, .col-md-11, .col-md-12, 
+	.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+	.col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, 
+	.col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, 
+	.col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, 
+	.col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, 
+	.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		text-align: center ;
+	}
+	.wellcome{
+		height: 550px;
+		.header-content{
+			    margin-top: 200px;
+   			    margin-bottom: 150px;
+		}
+	}
+	.about-us{
+		height: auto;
+		.about-us-left{
+			text-align: center;
+			img{
+				position: static;
+				width: 100%;
+			}
+		}
+		.about-us-right{
+			position: static;
+			text-align: center;
+		}
+	}
+	.contact{
+		height: auto;
+		.input{
+			flex-direction: column;
+		}
+		input{width: 100% !important;}
+	}
+	.services{
+		height: auto;
+		.services-content{
+			position: static;
+		}
+	}
+	.clients{
+		#owl-demo-2{
+			position: static;
+		}
+	}
+	.our-work{
+		height: auto;
+		.portfolio-list ul{
+			display: flex;
+   			 flex-direction: row;
+   			 float: right;
+		}
+		.grid{
+			margin : 0 !important;
+			margin-left: -30px;
+		}
+		.grid-item-2{
+			// margin: 20px 0 !important;
+			// right: 15px;
+			margin-left: 30px !important;
+			width: 200px;
+			.inner-2{
+					
+				top:0;left: 0;right: 0;opacity: 0;
+				transform: translateX(100px);
+				transition: all 0.5s;
+			}
+			&:hover{
+				.inner-2{
+					top:0;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+	.our-clients{
+		height: auto;
+		#owl-demo-3{
+			position: static;
+		}
+	}
+
+	
 }

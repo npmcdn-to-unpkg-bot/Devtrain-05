@@ -84,29 +84,7 @@ $(document).ready(function(){
           });
             return false;
         });
-
-      //- END ISOTOPE---------------------------------------------------------------------
-	  //  REnponsive-menu________----------------------------------------------------------
-	     //  var animationNameIn = 'animated bounceInLeft';
-	     //  var animationNameOut = 'animated hinge';
-	     //  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-	     // $('.open-nav').click(function(){
-	      
-	     //      $(".reponsive-nav-list").css({"z-index":"10000","width":"100%","display":"block","font-size":"40px",
-	     //        "text-align":"center"});
-	     //      $(".reponsive-nav-list").addClass(animationNameIn).one(animationEnd,function(){
-	     //        $(this).removeClass(animationNameIn);
-	     //     });
-	     //  });
-	     //  $('.close-nav').click(function(){
-	     //     $(".reponsive-nav-list").addClass(animationNameOut).one(animationEnd,function(){
-	     //       $(this).css("display","none");
-	     //       $(this).removeClass(animationNameOut);
-	     //    });
-	     // });
-	   // End REnponsive-menu________----------------------------------------------------------
-      //- Ofset ID for Animate---------------------------------------------------------------------
+		// End external js: isotope.pkgd.js-------------------------------------------------------		
       	
       	 $("ul.nav a, .reponsive-nav-list a").click(function (){
       	 	// $('.reponsive-nav-list').css('display','none');
@@ -119,18 +97,17 @@ $(document).ready(function(){
             });
       //-End Ofset ID for Animate---------------------------------------------------------------------
 
-	});
 
-	$(document).ready(function() {
-        $(window).bind('scroll', function() {
-            parallax();
-        });
-         $('.scrolldown a').click(function(){
-			$('html, body').animate({
-                    scrollTop: $('#about').position().top
-                }, 2000);
-        });
-	});
+	
+    $(window).bind('scroll', function() {
+        parallax();
+    });
+     $('.scrolldown a').click(function(){
+		$('html, body').animate({
+                scrollTop: $('#about').position().top
+            }, 2000);
+    });
+
  
 	function parallax() {
         var scrollPos = $(window).scrollTop();
@@ -214,3 +191,4 @@ $(document).ready(function(){
         $('#owl-demo-3').css('top',((testimonials * 0.2) - (scrollPos * 0.2)) + 'px');
 
 	}
+});
